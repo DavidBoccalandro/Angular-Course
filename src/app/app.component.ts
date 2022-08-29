@@ -13,4 +13,8 @@ export class AppComponent {
   handleClick() {
     console.log('clicked');
   }
+
+  onKeyUp(input: HTMLInputElement) {
+    this.data.title = input.value;
+  }
 }

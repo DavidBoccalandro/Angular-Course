@@ -304,8 +304,17 @@
 
 <!-- Toolbar -->
 
+<h1>
+  {{ data.title }}
+</h1>
 
-<input type="text" class="demo" [value]="data.title" (click)="handleClick()" />
+<input 
+  type="text"
+  class="demo"
+  (click)="handleClick()"
+  (keyup)="onKeyUp(titleInput)"
+  #titleInput
+/>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
